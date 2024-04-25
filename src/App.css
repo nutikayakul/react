@@ -1,38 +1,77 @@
+.card-menu {
+    background-color: #44d3e9;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .App {
-  text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-menu {
+    padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.w-full {
+    width: 100%;
+    /* เพิ่มสไตล์อื่น ๆ ตามต้องการ */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tabmenu {
+    float: left;
+    /* จัด tabmenu ไปทางซ้าย */
+    border: 1px solid #ccc;
+    /* เพิ่มเส้นขอบ */
+    border-radius: 5px;
+    /* กำหนดรูปร่างของเส้นขอบ */
+    padding: 10px;
+    /* เพิ่มช่องว่างรอบขอบ */
+    margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.tabmenu .p-panelmenu {
+    width: 100%;
+    /* ทำให้ panelmenu ขยายตาม tabmenu */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* หรือถ้าต้องการให้ tabmenu มีขนาดคงที่ */
+
+.tabmenu {
+    float: left;
+    /* จัด tabmenu ไปทางซ้าย */
+    width: 200px;
+    /* กำหนดความกว้างคงที่ */
+    border: 1px solid #ccc;
+    /* เพิ่มเส้นขอบ */
+    border-radius: 5px;
+    /* กำหนดรูปร่างของเส้นขอบ */
+    padding: 10px;
+    /* เพิ่มช่องว่างรอบขอบ */
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: normal;
+    background: var(--surface-ground);
+    color: var(--text-color);
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
